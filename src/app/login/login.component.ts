@@ -1,6 +1,8 @@
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
+
+declare const $: any;
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -11,6 +13,7 @@ export class LoginComponent implements OnInit {
   constructor(public router: Router) { }
 
   ngOnInit() {
+    $('body').addClass('bg-dark');
   }
 
   signin() {
